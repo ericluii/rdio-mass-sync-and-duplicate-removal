@@ -1,4 +1,4 @@
-# Rdio mass sync
+# Rdio mass sync && duplicate removal
 Sync your entire music collection to your mobile device for offline use
 
 ## Prerequisites
@@ -24,10 +24,21 @@ You can either [clone the repository](https://github.com/johnzimmerman/rdio-mass
 1. Open `rdio_consumer_credentials.py` in your favorite text editor
 2. Add your Rdio Key and Secret to the `RDIO_CONSUMER_KEY` and `RDIO_CONSUMER_SECRET` variables
 
-## Run all the things
+## Run mass sync 
 1. `python mass_sync.py`
 2. You'll be presented with a Rdio URL
 3. Copy and paste the URL into your browser.
 4. On the page that pops up, click **Allow**
 5. Copy and paste the PIN back into Rdio mass sync
 6. When the request has been sent, open Rdio on your mobile device to verify the sync progress of your collection. Your phone's sync progress is viewable within the Rdio app's Settings menu.
+
+## Run duplicate removal
+1. `python delete_duplicates.py`
+2. You'll be presented with a Rdio URL
+3. Copy and paste the URL into your browser.
+4. On the page that pops up, click **Allow**
+5. Copy and paste the PIN back into Rdio duplicate removal
+6. You will then be provided with a list of songs that are duplicates
+7. When prompted, enter [y/n] to decide which songs to keep or delete
+8. When you have gone through all songs, a final confirmation will ensure you are removing the correct songs
+9. When you verify, the request will be made and you can check rdio that the changes have been made
