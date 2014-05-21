@@ -17,8 +17,8 @@ If you don't already have a Rdio account, sign up [here](http://www.rdio.com/sig
  4. Click **Register Application**
 5. The next page will show your API Key and Shared Secret. Make a note of these, you'll need them later.
 
-## Install Rdio mass sync
-You can either [clone the repository](https://github.com/johnzimmerman/rdio-mass-sync) or download and unpack the [latest version](https://github.com/johnzimmerman/rdio-mass-sync/zipball/master).
+## Install Rdio mass sync and Duplicate Remover
+You can either [clone the repository](https://github.com/ericluii/rdio-mass-sync-and-duplicate-removal) or download and unpack the [latest version](https://github.com/ericluii/rdio-mass-sync-and-duplicate-removal/zipball/master).
 
 ## Configure Rdio mass sync
 1. Open `rdio_consumer_credentials.py` in your favorite text editor
